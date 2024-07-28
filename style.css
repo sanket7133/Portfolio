@@ -373,6 +373,7 @@ article .icon {
 .project-title {
   margin: 1rem;
   color: black;
+  text-align: center;
 }
 
 .project-btn {
@@ -429,4 +430,70 @@ footer {
 
 footer p {
   text-align: center;
+}
+.project-cards-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  padding-bottom: 20px;
+  position: relative;
+  width: 100%
+}
+
+.project-cards-container .details-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 20px;
+  transition: transform 0.5s ease-in-out;
+}
+
+.project-cards-container .details-container:last-child {
+  margin-right: 0;
+}
+
+.next-button {
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: #fff;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+.next-button img {
+  width: 20px;
+  height: 20px;
+}
+
+@media (max-width: 768px) {
+  .project-cards-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 480px) {
+  .project-cards-container {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+.project-card {
+  border: 1px solid #ddd; /* add a 1px solid border with a light gray color */
+  border-radius: 10px; /* add a 10px border radius to give it a rounded corner effect */
+  padding: 20px; /* add some padding to the card */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* add a subtle box shadow effect */
+}
+
+.owl-carousel .owl-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%; /* Set the height to 100% of the carousel */
 }

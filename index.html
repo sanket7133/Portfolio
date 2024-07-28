@@ -4,13 +4,17 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>My Portfolio</title>
+    <title>Sanket's Portfolio</title>
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="mediaqueries.css" />
+    <link rel="stylesheet" href="owlcarousel\dist\assets\owl.carousel.min.css">
+    <link rel="stylesheet" href="owlcarousel\dist\assets\owl.theme.default.min.css">
+    <script src="owlcarousel\dist\owl.carousel.min.js"></script>
+  
   </head>
   <body>
     <nav id="desktop-nav">
-      <div class="logo">Sanket Patil </div>
+      <div class="logo"> <B>Sanket Patil </div>
       <div>
         <ul class="nav-links">
           <li><a href="#about">About</a></li>
@@ -336,11 +340,12 @@ Linux, Terraform & scripting
       />
     </section>
     <BR></BR>
-    <section id="projects">
+    <!-- <section id="projects">
       <p class="section__text__p1">Browse My Recent</p>
       <h1 class="title">Projects</h1>
       <div class="experience-details-container">
         <div class="about-containers">
+          <div class="project-cards-container">
           <div class="details-container color-container">
             <div class="article-container">
               <img
@@ -367,22 +372,18 @@ Linux, Terraform & scripting
                 src="./assets/project-2.png"
                 alt="Project 2"
                 class="project-img"
-              />
+              />  
             </div>
-            <h2 class="experience-sub-title project-title">Project Two</h2>
+            <h2 class="experience-sub-title project-title">AWS infra using Terraform </h2><h6>Personal Project</h6>
+            <BR>
             <div class="btn-container">
               <button
                 class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/'"
+                onclick="location.href='https://github.com/sanket7133/AWS-ECS-infra-using-Terraform'"
               >
                 Github
               </button>
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/'"
-              >
-                Live Demo
-              </button>
+              
             </div>
           </div>
           <div class="details-container color-container">
@@ -393,22 +394,66 @@ Linux, Terraform & scripting
                 class="project-img"
               />
             </div>
-            <h2 class="experience-sub-title project-title">Project Three</h2>
+            <h2 class="experience-sub-title project-title">Jenkins Pipeline for Node App Deployment</h2><h6>Personal Project</h6>
+            <BR>
             <div class="btn-container">
               <button
                 class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/'"
+                onclick="location.href='https://github.com/sanket7133/Jenkins-CICD-Node-App'"
               >
                 Github
               </button>
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/'"
-              >
-                Live Demo
-              </button>
+              
             </div>
           </div>
+
+          
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/project-3.png"
+                alt="Project 3"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Jenkins Pipeline for Node App Deployment</h2><h6>Personal Project</h6>
+            <BR>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/sanket7133/Jenkins-CICD-Node-App'"
+              >
+                Github
+              </button>
+              
+            </div>
+          </div>
+        
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/project-3.png"
+                alt="Project 3"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Jenkins Pipeline for Node App Deployment</h2><h6>Personal Project</h6>
+            <BR>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/sanket7133/Jenkins-CICD-Node-App'"
+              >
+                Github
+              </button>
+              
+            </div>
+          </div>
+
+          </div>
+          <button class="next-button" id="next-button">
+            <img src="./assets/arrow.png" alt="Next" />
+          </button>
         </div>
       </div>
       <img
@@ -417,9 +462,61 @@ Linux, Terraform & scripting
         class="icon arrow"
         onclick="location.href='./#contact'"
       />
+    </section> -->
+
+    <section id="projects">
+      <p class="section__text__p1">Browse My Recent</p>
+      <h1 class="title">Projects</h1>
+      <BR>
+      <div class="owl-carousel owl-theme">
+        <div class="item">
+          <div class="project-card">
+            <img src="./assets/project-1.png" alt="Project 1" class="project-img" />
+            <h2 class="experience-sub-title project-title">CICD for Banking Application</h2>
+            <div class="btn-container">
+              <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/sanket7133/CICD-for-Banking-Application'">Github</button>
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <div class="project-card">
+            <img src="./assets/project-2.png" alt="Project 2" class="project-img" />
+            <h2 class="experience-sub-title project-title">AWS infra using Terraform</h2>
+            <h6 align="center">Personal Project</h6>
+            <BR>
+            <div class="btn-container">
+              <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/sanket7133/AWS-ECS-infra-using-Terraform'">Github</button>
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <div class="project-card">
+            <img src="./assets/project-3.png" alt="Project 3" class="project-img" />
+            <h2 class="experience-sub-title project-title">Jenkins Pipeline for Node App Deployment</h2>
+            <h6 align="center">Personal Project</h6>
+            <BR>
+            <div class="btn-container">
+              <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/sanket7133/Jenkins-CICD-Node-App'">Github</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="item">
+          <div class="project-card">
+            <img src="./assets/project-4.png" alt="Project 4" class="project-img" />
+            <h2 class="experience-sub-title project-title">EmojiFy Music -Your emotion, your melody</h2><h6 align="center">Academic Project</h6><BR>
+            <div class="btn-container">
+              <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/sanket7133/EmojiFy-Music'">Github</button>
+            </div>
+          </div>
+        </div>
+        <!-- Add more project cards here -->
+      </div>
+      <p align="Right" >Scroll -></p>
     </section>
+    <BR></BR><BR></BR><BR></BR><BR></BR>
     <section id="contact">
-      <p class="section__text__p1">Get in Touch</p>
+      <p class="section__text__p1"><BR>Get in Touch</p>
       <h1 class="title">Contact Me</h1>
       <div class="contact-info-upper-container">
         <div class="contact-info-container">
@@ -428,7 +525,7 @@ Linux, Terraform & scripting
             alt="Email icon"
             class="icon contact-icon email-icon"
           />
-          <p><a href="mailto:examplemail@gmail.com">mrsanket264@gmail.com</a></p>
+          <p><a href="mailto:mrsanket264@gmail.com">mrsanket264@gmail.com</a></p>
         </div>
         <div class="contact-info-container">
           <img
@@ -436,7 +533,7 @@ Linux, Terraform & scripting
             alt="LinkedIn icon"
             class="icon contact-icon"
           />
-          <p><a href="https://www.linkedin.com">LinkedIn</a></p>
+          <p><a href="https://www.linkedin.com/in/sanket-patil-cse">LinkedIn</a></p>
         </div>
       </div>
     </section>
@@ -453,6 +550,10 @@ Linux, Terraform & scripting
       </nav>
       <p>Copyright &#169; 2024 Sanket Patil. All Rights Reserved.</p>
     </footer>
+
+    <script src="owlcarousel\docs\assets\vendors\jquery.min.js"></script>
+    <script src="owlcarousel/dist/owl.carousel.min.js"></script>
     <script src="script.js"></script>
+    
   </body>
 </html>
